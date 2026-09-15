@@ -119,7 +119,7 @@ const footerContact = z.object({
   label: z.string(),
   value: z.string(),
   href: linkField.optional(),
-  kind: z.enum(["phone", "email", "qq", "wechat", "github", "team"]),
+  kind: z.enum(["phone", "email", "backupEmail", "qq", "wechat", "github", "team"]),
   imageSrc: z.string().optional(),
   imageAlt: z.string().optional(),
 });

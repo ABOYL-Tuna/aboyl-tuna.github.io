@@ -11,6 +11,9 @@ contactSections:
     body: 适合用于学术交流、项目讨论、合作邀约、内容沟通，或者只是想围绕 Agent、LLM、研究路径与个人成长展开一次认真对话。邮件会是最稳定的方式，GitHub 和站点则更适合先了解我现在在做什么。
     links:
       - label: Email
+        value: lior_liuqi@sjtu.edu.cn
+        href: mailto:lior_liuqi@sjtu.edu.cn
+      - label: 备用邮箱
         value: 18372779323@163.com
         href: mailto:18372779323@163.com
       - label: GitHub
@@ -18,8 +21,11 @@ contactSections:
         href: https://github.com/ABOYL-AIS
   - kicker: AIS Team
     title: 如果你想联系 Advanced Informatics Scholar 团队
-    body: 适合用于团队交流、项目合作、活动邀请、技术共建或未来想进一步了解 AIS 的同学与伙伴。现阶段可以先通过公开站点与 GitHub 入口建立联系，后续我会再补充更正式的团队信息页。
+    body: 适合用于团队交流、项目合作、活动邀请、技术共建或希望进一步了解 AIS 的同学与伙伴。可通过团队官网了解团队信息，也可在 GitHub 查看公开项目与技术成果。
     links:
+      - label: 团队官网
+        value: aisteam.com.cn
+        href: https://aisteam.com.cn/
       - label: AIS-Team GitHub
         value: Advanced-Informatics-Scholar
         href: https://github.com/Advanced-Informatics-Scholar
@@ -32,8 +38,13 @@ footer:
       value: "18372779323"
       kind: phone
     - label: Email
-      value: 18372779323@163.com
+      value: lior_liuqi@sjtu.edu.cn
       kind: email
+      href: mailto:lior_liuqi@sjtu.edu.cn
+    - label: 备用邮箱
+      value: 18372779323@163.com
+      kind: backupEmail
+      href: mailto:18372779323@163.com
     - label: 微信
       value: GuGuai_MR7
       kind: wechat
@@ -44,9 +55,9 @@ footer:
       kind: github
       href: https://github.com/ABOYL-AIS
     - label: AIS Team
-      value: 团队主页
+      value: 团队官网
       kind: team
-      href: https://github.com/Advanced-Informatics-Scholar
+      href: https://aisteam.com.cn/
       imageSrc: /团队LOGO.png
       imageAlt: Advanced Informatics Scholar team logo
 ---

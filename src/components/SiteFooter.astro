@@ -15,6 +15,7 @@ const footer = page.data.footer;
 
 const phone = footer?.contacts.find((item) => item.kind === "phone");
 const email = footer?.contacts.find((item) => item.kind === "email");
+const backupEmail = footer?.contacts.find((item) => item.kind === "backupEmail");
 const wechat = footer?.contacts.find((item) => item.kind === "wechat");
 const github = footer?.contacts.find((item) => item.kind === "github");
 const team = footer?.contacts.find((item) => item.kind === "team");
@@ -62,7 +63,17 @@ const team = footer?.contacts.find((item) => item.kind === "team");
             </span>
             <span class="min-w-0">
               <span class="section-kicker block !text-[0.72rem] !tracking-[0.2em]">{email.label}</span>
-              <span class="mt-1 block break-all text-lg text-text md:text-[1.1rem]">{email.value}</span>
+              <a href={email.href} class="mt-1 block break-all text-base text-text transition-colors hover:text-accent-deep md:text-[1.05rem]">
+                {email.value}
+              </a>
+              {backupEmail && (
+                <span class="mt-2 block border-t border-line pt-2">
+                  <span class="block text-[0.68rem] tracking-[0.14em] text-muted">{backupEmail.label}</span>
+                  <a href={backupEmail.href} class="mt-0.5 block break-all text-sm text-muted transition-colors hover:text-accent-deep">
+                    {backupEmail.value}
+                  </a>
+                </span>
+              )}
             </span>
           </div>
         )}
